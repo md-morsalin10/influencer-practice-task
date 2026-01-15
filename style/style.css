@@ -107,6 +107,9 @@
     border-radius: 8px;
     padding: 15px 17px;
 }
+.card:hover{
+    background-color: aqua;
+}
 .product-title{
     font-size: 1.75rem;
     font-weight: 500;
@@ -181,4 +184,48 @@ footer{
 }
 .footer-icon{
     color: white;
+    margin-left: 10px;
+}
+
+
+
+/* responsive Query */
+@media screen and (max-width:570px) {
+    .navbar, .banner-main{
+        flex-direction: column;
+    }
+    .navbar{
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-main, .feature-section{
+        flex-direction: column-reverse;
+    }
+    .banner-image{
+        width: 100%;
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+    .banner-section{
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 0px;
+    text-align: center;
+   }
+   .sponsors{
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10px;
+    margin-top: 50px;
+   }
+   .card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .feature-section{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   }
 }
